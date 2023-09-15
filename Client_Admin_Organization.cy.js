@@ -28,17 +28,16 @@ describe("To Verify Organization field  ", () => {
     cy.xpath('//b[text()="Organization Id :"]').contains("Organization Id");
     cy.xpath('//b[text()="Organization Name : "]').contains(
       "Organization Name"
-    ); 
+    );
     cy.xpath('//b[text()="Organization Email Address : "]').contains(
-      "Organization Email Address "
+      "Organization Email Address"
     );
     cy.xpath('//a[text()="Subscription Plan"]').contains("Subscription Plan");
     cy.xpath('//a[text()="User Details"]').contains("User Details");
-    cy.xpath('//p[contains(text(),"VM")]').contains("VM's Specification");
-    cy, xpath('//a[text()="Subdomain"]').contains("Subdomain");
+    cy.xpath('//a[contains(text(),"Vm")]').contains("Vm's Specification");
+    cy.xpath('//a[text()="Subdomain"]').contains("Subdomain");
   });
 
-  //
   it("Test Scenario 2] To Check To Click  Subscription Plan,User Details,VM's Specification,Subdomain, user should able to display content inside that filed  ", () => {
     loginApplication();
     WaitFunction();
@@ -63,7 +62,7 @@ describe("To Verify Organization field  ", () => {
 
     cy.xpath('//a[text()="Subscription Plan"]').click();
     cy.xpath('//a[text()="User Details"]').click();
-    cy.xpath('//p[contains(text(),"VM")]').click();
-    cy, xpath('//a[text()="Subdomain"]').click();
+    cy.xpath('//a[contains(text(),"Vm")]').click();
+    cy.xpath('//a[text()="Subdomain"]').click();
   });
 });
